@@ -11,7 +11,7 @@ $ option:buf generate
 
 ### If use `Buf`
 ##### Example buf.gen.yaml
-`
+```
 version: v1
 plugins:
   - name: go
@@ -20,12 +20,12 @@ plugins:
   - name: go-grpc
     out: .
     opt: paths=source_relative,require_unimplemented_servers=false
-`
+```
 ##### Example buf.yaml
-`
+```
 version: v1
 name: buf.build/fantom400/pingpong
 deps:
   - buf.build/googleapis/googleapis
   - buf.build/grpc-ecosystem/grpc-gateway
-`
+```
