@@ -1,4 +1,5 @@
 # grpc
+### Option https://docs.buf.build/installation
 ```
 $ brew install grpc
 $ proto --version
@@ -13,6 +14,10 @@ $ option:buf generate
 ##### Example buf.gen.yaml
 ```
 version: v1
+managed: 
+  enabled: true
+  go_package_prefix:
+    default: github.com/<repo>/path_to_root_store_proto
 plugins:
   - name: go
     out: .
